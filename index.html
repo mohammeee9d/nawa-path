@@ -157,13 +157,18 @@ footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padd
     <div class="weeks" id="weeks"></div>
   </section>
 
+  <section aria-labelledby="h-pf">
+    <div class="sec-head"><h2 id="h-pf">ملف الأعمال</h2><p class="muted">4 مشاريع، كل واحد في مستودع مستقل على GitHub بملف README وصور ورابط تشغيل.</p></div>
+    <ul class="tasks" id="pf"></ul>
+  </section>
+
   <section aria-labelledby="h-cp">
     <div class="sec-head"><h2 id="h-cp">نقاط التحقق</h2><p class="muted">لا تنتقل للمرحلة التالية قبل أن تحقق بنودها كلها.</p></div>
     <div id="cps" style="display:flex;flex-direction:column;gap:18px"></div>
   </section>
 
   <section aria-labelledby="h-routine">
-    <div class="sec-head"><h2 id="h-routine">الجلسة اليومية</h2><p class="muted">ساعة ونصف من الأحد إلى الخميس، و3 ساعات يوم السبت لإكمال مخرج الأسبوع والمراجعة. الجمعة راحة.</p></div>
+    <div class="sec-head"><h2 id="h-routine">الجلسة اليومية</h2><p class="muted">ساعة ونصف من الأحد إلى الخميس، و3 ساعات يوم السبت لإكمال مخرج الأسبوع ثم التقييم الأسبوعي. الجمعة راحة.</p></div>
     <ol class="steps">
       <li><span class="mono">20 د</span><span>تعلّم المفهوم من المصدر الرسمي (MDN أو التوثيق).</span></li>
       <li><span class="mono">50 د</span><span>طبّقه في مشروع نواة بيدك.</span></li>
@@ -175,10 +180,11 @@ footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padd
   <section aria-labelledby="h-ai">
     <div class="sec-head"><h2 id="h-ai">قواعد الذكاء الاصطناعي</h2></div>
     <ul class="rules">
-      <li><strong>المرحلة 1:</strong> الذكاء الاصطناعي يشرح ويراجع فقط، ولا يكتب لك كوداً. أوقف الإكمال التلقائي في VS Code.</li>
+      <li><strong>الأسابيع 1–6:</strong> معلّم ومراجع، وأنت تكتب الكود. أوقف الإكمال التلقائي في VS Code.</li>
+      <li><strong>الأسابيع 7–12:</strong> مساعد في البرمجة، وأنت مسؤول عن فهم كل جزء قبل قبوله.</li>
+      <li><strong>الأسابيع 13–24:</strong> شريك في البناء، وأنت تراجع الكود والاختبارات والأمان بنفسك.</li>
       <li><strong>قاعدة الـ 30 دقيقة:</strong> إذا علقت، حاول 30 دقيقة قبل أن تسأل، ثم اطلب تلميحاً لا حلاً.</li>
-      <li><strong>من المرحلة 2:</strong> كل كود يكتبه Claude Code لا تقبله حتى تستطيع شرحه سطراً سطراً.</li>
-      <li><strong>كل أسبوع:</strong> اطلب من Claude أن يختبرك بـ 5 أسئلة على ما تعلمته.</li>
+      <li><strong>التقييم الأسبوعي:</strong> فهم، تطبيق، تصحيح، شرح. لا يُحسب الأسبوع منتهياً بدونها.</li>
     </ul>
     <div class="prompt">
       <b class="muted" style="font-size:.8rem;font-weight:500">أمر المراجعة اليومية</b>
@@ -196,7 +202,7 @@ footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padd
         <tr><td>Claude Code</td><td>البناء بعد فهم المفهوم، ومراجعة المشاريع الكبيرة</td><td>أسبوع 7</td></tr>
         <tr><td>ChatGPT</td><td>رأي ثانٍ عند التعثر، وتوليد صور للواجهات</td><td>أسبوع 1</td></tr>
         <tr><td>Canva</td><td>هوية نواة، صور التسويق ومحتوى TikTok</td><td>أسبوع 1</td></tr>
-        <tr><td>Figma</td><td>تخطيط الشاشات قبل البرمجة</td><td>أسبوع 7</td></tr>
+        <tr><td>Figma</td><td>مخطط مبدئي في الأسبوع 1، ثم تصميم الشاشات بعمق</td><td>أسبوع 1</td></tr>
         <tr><td>VS Code</td><td>محرر الكود مع إضافة Live Server</td><td>أسبوع 1</td></tr>
         <tr><td>GitHub</td><td>حفظ كل تمرين، وملف أعمالك أمام العملاء</td><td>أسبوع 1</td></tr>
         <tr><td>Vercel</td><td>نشر المواقع مجاناً من GitHub</td><td>أسبوع 6</td></tr>
@@ -206,39 +212,39 @@ footer{font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);padd
     </table></div>
   </section>
 
-  <footer>الخطة مبنية على قرابة 10 ساعات أسبوعياً. إذا قلّ وقتك فمدّد المرحلة ولا تحذف منها؛ الانتقال يكون باجتياز نقاط التحقق لا بانتهاء الأسابيع.</footer>
+  <footer>الخطة مبنية على قرابة 10 ساعات أسبوعياً. إذا قلّ وقتك فمدّد المرحلة ولا تحذف منها؛ لا ينتقل الأسبوع الحالي حتى تُنجز التقييم الأسبوعي، ولا تنتقل المرحلة حتى تجتاز نقاط التحقق.</footer>
 </div>
 
 <script>
 const PHASES=[
- {name:'الأساس اليدوي',skill:'HTML · CSS · JavaScript',output:'صفحة نواة التعريفية بالعربية والإنجليزية',rule:'الذكاء الاصطناعي معلّم ومراجِع فقط',note:'أوقف الإكمال التلقائي في VS Code خلال هذه المرحلة.',fm:'تحدٍّ من Frontend Mentor بمستوى Newbie',
+ {name:'الأساس اليدوي',skill:'HTML · CSS · JavaScript',output:'صفحة نواة التعريفية بالعربية والإنجليزية',rule:'معلّم ومراجع، وأنت تكتب الكود',note:'أوقف الإكمال التلقائي في VS Code خلال هذه المرحلة.',fm:'تحدٍّ من Frontend Mentor بمستوى Newbie',
   weeks:[
-  {t:'HTML والهيكل',learn:'هيكل HTML الدلالي، النماذج، Git وGitHub',apply:'هوية نواة في Canva (شعار و5 ألوان وخطان)، ثم هيكل الصفحة: القائمة، الواجهة، المزايا، الأسعار، التواصل',res:[['MDN: HTML','https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content'],['GitHub: البداية','https://docs.github.com/en/get-started/start-your-journey']]},
+  {t:'HTML والهيكل',learn:'هيكل HTML الدلالي، النماذج، Git وGitHub',apply:'هوية نواة في Canva (شعار و5 ألوان وخطان)، ومخطط مبدئي للصفحة في Figma، ثم هيكل الصفحة: القائمة، الواجهة، المزايا، الأسعار، التواصل',res:[['Figma: البداية','https://help.figma.com/hc/en-us'],['MDN: HTML','https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content'],['GitHub: البداية','https://docs.github.com/en/get-started/start-your-journey']]},
   {t:'أساسيات CSS',learn:'الـ Box Model، المتغيرات، الخطوط، المسافات والتسلسل البصري',apply:'تنسيق كامل للصفحة بألوان نواة من متغيرات CSS',res:[['MDN: CSS','https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics'],['Kevin Powell','https://www.youtube.com/@KevinPowell']]},
   {t:'التخطيط والتجاوب',learn:'Flexbox وGrid، التجاوب مع الجوال، الخصائص المنطقية لدعم RTL',apply:'نسخة عربية وإنجليزية تعمل على الجوال والكمبيوتر',res:[['MDN: التخطيط','https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout'],['الخصائص المنطقية','https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_logical_properties_and_values']]},
   {t:'JavaScript والتفاعل',learn:'المتغيرات، الدوال، المصفوفات، الـ DOM، الأحداث',apply:'قائمة تنقل متحركة للجوال، وزر تبديل اللغة، والوضع الداكن',res:[['javascript.info','https://javascript.info'],['MDN: JavaScript','https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting']]},
   {t:'الحركة والبيانات',learn:'transitions وkeyframes، fetch وJSON، async/await',apply:'أنيميشن عند التمرير، وتحميل باقات الأسعار من ملف JSON',res:[['javascript.info: async','https://javascript.info/async'],['MDN: الحركة','https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations']]},
   {t:'الجودة والنشر',learn:'التحقق من النماذج، الأداء، إمكانية الوصول، النشر',apply:'نموذج تواصل متحقق منه، ونشر الصفحة على Vercel برابط حقيقي',res:[['Vercel','https://vercel.com/docs/getting-started-with-vercel'],['MDN: الوصول','https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility']]}
  ]},
- {name:'الواجهات الحديثة',skill:'React · Tailwind · TypeScript',output:'واجهة لوحة تحكم نواة CRM ببيانات تجريبية',rule:'المكوّن الأول من كل نوع بيدك، ثم Claude Code',note:'بعد الأسبوع 12 اقرأ كود برنامج الفوزان واشرح كل ملف فيه.',fm:'تحدٍّ من Frontend Mentor بمستوى Junior',
+ {name:'الواجهات الحديثة',skill:'React · Tailwind · TypeScript',output:'واجهة لوحة تحكم نواة CRM ببيانات تجريبية',rule:'مساعد في البرمجة، وأنت مسؤول عن فهم كل جزء',note:'بعد الأسبوع 12 اقرأ كود برنامج الفوزان واشرح كل ملف فيه.',fm:'تحدٍّ من Frontend Mentor بمستوى Junior',
   weeks:[
   {t:'التصميم في Figma',learn:'الـ Frames، Auto Layout، المكونات',apply:'تخطيط 4 شاشات: الرئيسية، العملاء، ملف عميل، مراحل الصفقات',res:[['Figma Help','https://help.figma.com/hc/en-us']]},
   {t:'React الأساسي',learn:'المكونات، props، useState، القوائم (مشروع Vite)',apply:'الشريط الجانبي، بطاقات المؤشرات، جدول العملاء',res:[['react.dev','https://react.dev/learn'],['Vite','https://vite.dev/guide/']]},
   {t:'Tailwind',learn:'التصميم المتجاوب، الوضع الداكن، دعم RTL',apply:'نقل تصميم Figma بدقة مع هوية نواة',res:[['Tailwind Docs','https://tailwindcss.com/docs']]},
   {t:'الحالة والتنقل',learn:'useEffect، النماذج، React Router',apply:'إضافة وتعديل عميل، بحث وفلترة، التنقل بين الشاشات',res:[['react.dev: Effects','https://react.dev/learn/synchronizing-with-effects'],['React Router','https://reactrouter.com/home']]},
-  {t:'TypeScript',learn:'الأنواع، الواجهات، أنواع الـ props',apply:'تحويل المشروع إلى TypeScript: العميل، الصفقة، المرحلة',res:[['TS Handbook','https://www.typescriptlang.org/docs/handbook/intro.html'],['React + TS','https://react.dev/learn/typescript']]},
+  {t:'TypeScript',learn:'الأنواع، الواجهات، أنواع الـ props، وأول اختبارات بـ Vitest',apply:'تحويل المشروع إلى TypeScript (العميل، الصفقة، المرحلة)، واختبارات لمكوّن جدول العملاء',res:[['Vitest','https://vitest.dev/guide/'],['TS Handbook','https://www.typescriptlang.org/docs/handbook/intro.html'],['React + TS','https://react.dev/learn/typescript']]},
   {t:'لوحة متقدمة',learn:'السحب والإفلات، الرسوم البيانية (Recharts)',apply:'لوحة كانبان للصفقات ورسم المبيعات الشهرية، ثم النشر',res:[['Recharts','https://recharts.org'],['dnd kit','https://dndkit.com']]}
  ]},
- {name:'المنتج الكامل',skill:'Next.js · Supabase · النشر',output:'نواة CRM منشورة بتسجيل دخول وقاعدة بيانات',rule:'لا تقبل كوداً لا تستطيع شرحه سطراً سطراً',note:'لا تضع بيانات عملاء حقيقية في بيئة التعلم، استخدم بيانات وهمية.',
+ {name:'المنتج الكامل',skill:'Next.js · Supabase · النشر',output:'نواة CRM منشورة بتسجيل دخول وقاعدة بيانات',rule:'شريك في البناء، وأنت تراجع الكود والاختبارات والأمان',note:'لا تضع بيانات عملاء حقيقية في بيئة التعلم، استخدم بيانات وهمية.',
   weeks:[
   {t:'Next.js',learn:'App Router، الـ layouts، مكونات السيرفر والعميل',apply:'نقل واجهة المرحلة 2 إلى Next.js',res:[['Next.js Learn','https://nextjs.org/learn']]},
-  {t:'قواعد البيانات',learn:'أساسيات SQL، تصميم الجداول والعلاقات، Supabase',apply:'جداول: الشركات، المستخدمون، العملاء، الصفقات، الأنشطة',res:[['Supabase: DB','https://supabase.com/docs/guides/database/overview'],['SQLBolt','https://sqlbolt.com']]},
+  {t:'قواعد البيانات',learn:'أساسيات SQL، تصميم الجداول والعلاقات، Supabase',apply:'جداول: الشركات، المستخدمون، العملاء، الصفقات، الأنشطة، وفي كل جدول عمود company_id من البداية',res:[['Supabase: DB','https://supabase.com/docs/guides/database/overview'],['SQLBolt','https://sqlbolt.com']]},
   {t:'المصادقة والأدوار',learn:'Supabase Auth والصلاحيات',apply:'تسجيل دخول، أدوار (مدير / مندوب)، كل مندوب يرى عملاءه فقط',res:[['Supabase Auth','https://supabase.com/docs/guides/auth']]},
   {t:'تعدد الشركات',learn:'Row Level Security وتعدد الشركات (multi-tenant)',apply:'عزل بيانات كل شركة عن الأخرى، وهذا شرط أساسي لأي SaaS',res:[['Supabase RLS','https://supabase.com/docs/guides/database/postgres/row-level-security']]},
   {t:'الملفات والتحديث اللحظي',learn:'Server Actions، رفع الملفات، التحديث اللحظي',apply:'رفع مرفقات للعميل، وسجل نشاط يتحدث مباشرة',res:[['Next.js Docs','https://nextjs.org/docs'],['Supabase Storage','https://supabase.com/docs/guides/storage']]},
-  {t:'الإطلاق التقني',learn:'النشر، متغيرات البيئة، الدومين',apply:'النشر على Vercel بدومين نواة، وبريد على الدومين',res:[['Vercel: Domains','https://vercel.com/docs/domains'],['متغيرات البيئة','https://vercel.com/docs/environment-variables']]}
+  {t:'الإطلاق التقني',learn:'النشر، متغيرات البيئة، الدومين، واختبارات end-to-end بـ Playwright',apply:'اختبار تسجيل الدخول وإضافة عميل من البداية للنهاية، ثم النشر على Vercel بدومين نواة وبريد على الدومين',res:[['Playwright','https://playwright.dev/docs/intro'],['Vercel: Domains','https://vercel.com/docs/domains'],['متغيرات البيئة','https://vercel.com/docs/environment-variables']]}
  ]},
- {name:'الذكاء والبيع',skill:'ربط AI · الاشتراكات',output:'3 ميزات AI حقيقية وأول عميل تجريبي',rule:'لا تقبل كوداً لا تستطيع شرحه سطراً سطراً',note:'مفتاح الـ API يبقى على السيرفر فقط، لا في كود المتصفح ولا على GitHub.',
+ {name:'الذكاء والبيع',skill:'ربط AI · الاشتراكات',output:'3 ميزات AI حقيقية وأول عميل تجريبي',rule:'شريك في البناء، وأنت تراجع الكود والاختبارات والأمان',note:'مفتاح الـ API يبقى على السيرفر فقط، لا في كود المتصفح ولا على GitHub.',
   weeks:[
   {t:'أول ميزة AI',learn:'استدعاء API النماذج من السيرفر، حماية المفاتيح، الـ streaming',apply:'زر «لخّص العميل»: ملخص سجل التواصل والخطوة التالية',res:[['Claude Docs','https://docs.claude.com'],['OpenAI Docs','https://platform.openai.com/docs']]},
   {t:'هندسة التعليمات',learn:'هندسة التعليمات، المخرجات المنظمة (JSON)',apply:'صياغة رسالة متابعة واتساب حسب مرحلة العميل',res:[['دليل التعليمات','https://docs.claude.com/en/docs/build-with-claude/prompt-engineering/overview']]},
@@ -255,13 +261,22 @@ const CPS=[
  ['3 ميزات AI تعمل والمفتاح محمي على السيرفر','أعرف تكلفة AI الشهرية لكل عميل وأسعّر الباقات بهامش ربح','شركة واحدة على الأقل تستخدم المنتج فعلياً']
 ];
 
+const PORTFOLIO=[
+ ['صفحة نواة التسويقية','نهاية المرحلة 1 · HTML وCSS وJavaScript'],
+ ['لوحة تحكم نواة','نهاية المرحلة 2 · React وTailwind وTypeScript'],
+ ['المساعد الذكي','الأسبوع 21 · واجهة محادثة متصلة بـ API'],
+ ['نواة CRM الكامل','الأسبوع 24 · المنتج المنشور بحسابات وAI واشتراكات']
+];
 // flatten weeks with tasks
 const WEEKS=[];
 PHASES.forEach((p,pi)=>p.weeks.forEach((w,wi)=>{
   const n=pi*6+wi+1;
   const tasks=[{k:'learn',l:'تعلّم',x:w.learn},{k:'apply',l:'طبّق',x:w.apply}];
   if(p.fm) tasks.push({k:'fm',l:'تمرين',x:p.fm});
-  tasks.push({k:'quiz',l:'اختبار',x:'اطلب من Claude 5 أسئلة على مفاهيم الأسبوع وأجب عنها'});
+  tasks.push({k:'a-know',l:'تقييم · فهم',x:'اشرح مفهوم الأسبوع لـ Claude بدون النظر في المصدر'});
+  tasks.push({k:'a-impl',l:'تقييم · تطبيق',x:'اكتب تمريناً صغيراً جديداً على مفهوم الأسبوع بدون نسخ'});
+  tasks.push({k:'a-debug',l:'تقييم · تصحيح',x:'اطلب من Claude كوداً فيه أخطاء من موضوع الأسبوع، واكتشفها وأصلحها'});
+  tasks.push({k:'a-explain',l:'تقييم · شرح',x:'اشرح كود أسبوعك سطراً سطراً'});
   tasks.push({k:'push',l:'رفع',x:'ارفع عمل الأسبوع على GitHub'});
   WEEKS.push({...w,n,p:pi,tasks:tasks.map(t=>({...t,id:'w'+n+'-'+t.k}))});
 }));
@@ -347,6 +362,9 @@ function render(){
     const ids=g.map((_,i)=>'cp'+(gi+1)+'-'+i), d=ids.filter(isDone).length;
     return `<div class="cp-group"><h3><span>نهاية المرحلة ${gi+1}: ${PHASES[gi].name}</span><span class="mono muted">${d}/${g.length}</span></h3><ul class="tasks">${g.map((x,i)=>`<li><label class="task" for="${ids[i]}"><input type="checkbox" id="${ids[i]}" data-id="${ids[i]}"${isDone(ids[i])?' checked':''}><span>${x}</span></label></li>`).join('')}</ul></div>`;
   }).join('');
+
+  const pfDone=PORTFOLIO.filter((_,i)=>isDone('pf-'+i)).length;
+  $('pf').innerHTML=PORTFOLIO.map((x,i)=>`<li><label class="task" for="pf-${i}"><input type="checkbox" id="pf-${i}" data-id="pf-${i}"${isDone('pf-'+i)?' checked':''}><span><em>${x[0]}</em> <span class="muted" style="font-size:.85rem">· ${x[1]}</span></span></label></li>`).join('');
 
   if(focusId){const el=document.getElementById(focusId); if(el)el.focus({preventScroll:true});}
 }
